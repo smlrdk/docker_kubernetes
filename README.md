@@ -1,5 +1,14 @@
 # docker_kubernetes
-DevOps practice
+
+## DevOps practice
+
+### Задание: 
+1. Создать web-приложение, которое выводит содержимое из папки app.
+2. Собрать его в виде Docker image.
+3. Установить image в кластер Kubernetes.
+4. Обеспечить доступ к приложению извне кластера.
+
+### Ход работы:
 1. ```docker build -t zhenyap/server:1.0.0 -t zhenyap/server:latest server``` - сборка docker image.
 2. ```docker login -u smlrdk``` -  вход в docker hub.
 3. ```docker push smlrdk/server:1.0.0``` - push image.
@@ -10,7 +19,7 @@ DevOps practice
 8. ```kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000``` - обеспечение доступа к веб-приложению внутри кластера. 
 9. ```kubectl describe deployment web``` - проверка работоспособности текущего состояния деплоймента.
 
-Результат:
+### Результат:
 ```
 PS D:\Study\magistry\sem_2\DevOps\docker_kubernetes> kubectl describe deployment web
 Name:                   web
