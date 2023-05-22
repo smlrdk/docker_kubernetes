@@ -4,14 +4,15 @@ DevOps practice
 2. ```docker login -u smlrdk``` -  вход в docker hub.
 3. ```docker push smlrdk/server:1.0.0``` - push image.
 4. ```minikube start --driver=docker``` - запуск кластера миникуба.
-5. ```kubectl apply -f deployment.yaml``` - установка манифэста.
+5. ```kubectl apply -f deployment.yaml``` - установка манифэста в кластер Kubernetes.
 6. ```kubectl get deployments``` - проверка успешного создания деплоймента. 
 7. ```kubectl get pods``` - проверка успешного создания запущенных реплик.
 8. ```kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000``` - обеспечение доступа к веб-приложению внутри кластера. 
 9. ```kubectl describe deployment web``` - проверка работоспособности текущего состояния деплоймента.
 
 Результат:
-```PS D:\Study\magistry\sem_2\DevOps\docker_kubernetes> kubectl describe deployment web
+```
+PS D:\Study\magistry\sem_2\DevOps\docker_kubernetes> kubectl describe deployment web
 Name:                   web
 Namespace:              default
 CreationTimestamp:      Mon, 22 May 2023 22:30:39 +0300
