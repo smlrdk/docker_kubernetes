@@ -10,7 +10,7 @@ DevOps practice
 8. ```kubectl port-forward --address 0.0.0.0 deployment/web 8080:8000``` - обеспечение доступа к веб-приложению внутри кластера. 
 9. ```kubectl describe deployment web``` - проверка работоспособности текущего состояния деплоймента.
 
-Результат:
+### Результат:
 ```
 PS D:\Study\magistry\sem_2\DevOps\docker_kubernetes> kubectl describe deployment web
 Name:                   web
