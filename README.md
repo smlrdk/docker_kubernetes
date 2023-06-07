@@ -1,6 +1,6 @@
 # docker_kubernetes
 DevOps practice
-1. ```docker build -t zhenyap/server:1.0.0 -t zhenyap/server:latest server``` - сборка docker image.
+1. ```docker build -t smlrdk/server:1.0.0 -t smlrdk/server:latest server``` - сборка docker image.
 2. ```docker login -u smlrdk``` -  вход в docker hub.
 3. ```docker push smlrdk/server:1.0.0``` - push image.
 4. ```minikube start --driver=docker``` - запуск кластера миникуба.
