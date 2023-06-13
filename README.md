@@ -1,5 +1,10 @@
-# docker_kubernetes
-DevOps practice
+## Дисциплина "Инфраструктура разработки ПО (DevOps - инженер)"
+
+### Лабораторная работа (Docker + Kubernetes)
+
+(Солодкая Мария, магистратура, 1 курс, 2 семестр)
+
+Алгоритм действий (набор последовательных команд) для выполнения лабораторной работы:
 1. ```docker build -t smlrdk/server:1.0.0 -t smlrdk/server:latest server``` - сборка docker image.
 2. ```docker login -u smlrdk``` -  вход в docker hub.
 3. ```docker push smlrdk/server:1.0.0``` - push image.
